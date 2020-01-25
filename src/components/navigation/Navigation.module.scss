@@ -1,0 +1,56 @@
+.mobile {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navHeight);
+  padding: 5px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-bottom: rgba(0, 93, 169, 0.33) solid 0.5px;
+  color: #005CA9;
+
+  .logo {
+    height: 40px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .race_name {
+    line-height: 18px;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+
+  .burger {
+    width: 40px;
+    height: var(--navHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 3rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  /* scroll-behavior: smooth; */
+}
+
+
+:root {
+  --navHeight: 45px;
+  --menuHeight: 60px;
+  --navElements: 9;
+}
