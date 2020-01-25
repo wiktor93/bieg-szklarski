@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {NavLink} from 'react-router-dom';
 
 import Menu from './Menu';
 import logo from '../../images/logo.png';
@@ -10,9 +11,10 @@ const Navigation = () => {
   return (
     <>
       <nav className={styles.mobile}>
-        <a className={styles.logo} href="/">
+        <NavLink to="/" className={styles.logo}>
           <img src={logo} alt="bieg szklarski - logo" />
-        </a>
+        </NavLink>
+
         <div className={styles.race_name}>
           <span>BIEG SZKLARSKI</span>
         </div>

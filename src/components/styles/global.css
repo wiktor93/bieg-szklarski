@@ -14,5 +14,17 @@ html {
 :root {
   --navHeight: 45px;
   --menuHeight: 60px;
-  --navElements: 9;
+  --navElements: 7;
+}
+
+h2 {
+  margin: 40px 0 10px 0;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  color: #005CA9;
 }

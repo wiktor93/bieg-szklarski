@@ -1,0 +1,35 @@
+.sponsors {
+  padding: 0 15px;
+
+  .main_sponsor,
+  .partners,
+  .media_patron {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      max-width: 150px;
+      max-height: 100px;
+      margin: 1% 2.5% 2.5% 2.5%;
+      transition: 0.2s ease-out;
+
+      img {
+        max-height: inherit;
+      }
+    }
+  }
+
+  .main_sponsor a {
+    width: 200px;
+  }
+}
+
+@media (min-width:992px) {
+  .sponsors a:hover {
+    transform: scale(1.1);
+  }
+}
