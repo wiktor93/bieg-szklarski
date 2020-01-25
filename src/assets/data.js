@@ -7,3 +7,5 @@ export const routes = [
   {name: 'Regulamin', path: '/terms-and-conditions'},
   {name: 'Kontakt', path: '/contact'}
 ];
+
+export const currentYear = new Date().getUTCFullYear();

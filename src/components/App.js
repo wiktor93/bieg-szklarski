@@ -5,6 +5,7 @@ import Navigation from './navigation/Navigation';
 import Heading from './heading/Heading';
 
 import Sponsors from './sponsors/Sponsors';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Heading />
 
         <Sponsors />
+        <Footer />
       </div>
     </BrowserRouter>
   );
