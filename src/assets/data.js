@@ -1,5 +1,4 @@
 export const currentYear = new Date().getUTCFullYear();
-
 export const startDate = new Date('2020', '09', '20', '11');
 
 export const routes = [
