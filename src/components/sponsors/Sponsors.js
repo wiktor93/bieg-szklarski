@@ -2,7 +2,8 @@
 import React from 'react';
 
 import styles from './Sponsors.module.scss';
-import {partners, mediaPatrones} from '../../assets/data';
+import partners from '../../assets/partners';
+import mediaPatrones from '../../assets/mediaPatrones';
 import nsg from '../../images/sponsors/NSG.png';
 
 const Sponsors = () => {

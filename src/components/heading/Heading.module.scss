@@ -7,92 +7,30 @@
   min-height: calc(100vh - var(--navHeight));
   background: url("../../images/img1.jpg") center no-repeat;
   background-size: cover;
-}
 
-.slider {
-  width: 100%;
-  height: 200px;
-}
-
-.slider:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0px 0px 100px #000;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 10%), linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 5%),
-}
-
-.slider img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  min-height: 100%;
-  min-width: 100%;
-}
-
-.info {
-  width: 300px;
-  padding: 10px 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(21, 36, 66, 0.9);
-  box-shadow: 10px 10px 25px 5px #000;
-
-  text-align: center;
-  color: white;
-  font-size: 1.6rem;
-  line-height: 30px;
-}
-
-.info .counter .time {
-  padding-left: 10px;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 26px;
-  font-weight: 500;
-}
-
-.info .counter .time:nth-child(1) {
-  padding-left: 0px;
-}
-
-.info .details {
-  margin: 0 auto;
-  width: 250px;
-  list-style: none;
-  text-align: left;
-  line-height: 30px;
-}
-
-.info .details i {
-  font-size: 3.2rem;
-  transform: translate(0, 10%);
-  text-align: center;
-  width: 40px;
-  margin-right: 10px;
+  &:after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 100px #000;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 10%), linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 5%),
+  }
 }
 
 @media (max-height: 400px) and (orientation:landscape) {
-  header {
+  .header {
     height: 400px;
     overflow: hidden;
-  }
-
-  .info {
-    top: 3%;
-    transform: translate(-50%, 0);
-    bottom: auto;
   }
 }
 
 @media (min-width: 768px) {
-  header {
+  .header {
     min-height: 400px;
     height: 70vh;
     max-height: 640px;
@@ -105,7 +43,4 @@
     background-size: cover;
   }
 
-  .info {
-    left: 75%
-  }
 }
