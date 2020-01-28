@@ -5,6 +5,7 @@ import Navigation from './navigation/Navigation';
 import Heading from './heading/Heading';
 import News from './news/News';
 import CharityBanner from './charity-banner/CharityBanner';
+import VideoReports from './video-reports/VideoReports';
 
 import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
@@ -17,6 +18,7 @@ function App() {
         <Heading />
         <News />
         <CharityBanner />
+        <VideoReports />
 
         <Sponsors />
         <Footer />
