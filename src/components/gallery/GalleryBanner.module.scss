@@ -1,0 +1,45 @@
+.wraper {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 50vh;
+  max-height: 700px;
+  background: url("../../images/img3.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 50px #000;
+  }
+
+  .btn_container {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: rgba(21, 36, 66, 0.8);
+    text-align: center;
+
+    p {
+      line-height: 35px;
+      font-size: 25px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+    }
+
+  }
+}
+
+@media (orientation:landscape) {}
+
+.wraper {
+  height: 60vh;
+}

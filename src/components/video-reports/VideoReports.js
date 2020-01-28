@@ -10,16 +10,16 @@ const VideoReports = () => {
         <iframe
           title="iTV WISŁA - Relacja z 2. Biegu Szklarskiego"
           src="https://www.youtube.com/embed/kiOzzfgTeek"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <iframe
           title="Sandomierz TV - Relacja z 2. Biegu Szklarskiego"
           src="https://www.youtube.com/embed/Gs6SeCIMDNY"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </section>
