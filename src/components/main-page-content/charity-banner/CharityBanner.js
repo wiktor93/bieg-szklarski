@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import checkComponentPosition from '../../assets/checkComponentPosition';
+import checkComponentPosition from '../../../assets/checkComponentPosition';
 import styles from './CharityBanner.module.scss';
 
 const elementID = 'charity-banner';

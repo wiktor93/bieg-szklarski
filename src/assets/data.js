@@ -3,7 +3,7 @@ export const startDate = new Date('2020', '09', '20', '11');
 
 export const routes = [
   {name: 'Start', path: '/'},
-  {name: 'Wyniki', path: './result'},
+  {name: 'Wyniki', path: './results'},
   {name: 'Galeria', path: './gallery'},
   {name: 'Zapisy', path: './registration'},
   {name: 'Trasa', path: './route'},

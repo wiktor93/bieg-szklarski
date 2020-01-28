@@ -27,6 +27,11 @@ h2 {
   color: #005CA9;
 }
 
+hr {
+  margin: 25px auto 25px auto;
+  max-width: 1280px;
+}
+
 .resize-transition-stopper * {
   animation: none !important;
   transition: none !important;

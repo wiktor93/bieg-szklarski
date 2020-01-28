@@ -1,12 +1,9 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Navigation from './navigation/Navigation';
-import Heading from './heading/Heading';
-import News from './news/News';
-import CharityBanner from './charity-banner/CharityBanner';
-import VideoReports from './video-reports/VideoReports';
-import GalleryBanner from './gallery/GalleryBanner';
+import MainPageContent from './main-page-content/MainPageContent';
+import Results from './results/Results';
 
 import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
@@ -16,12 +13,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navigation />
-        <Heading />
-        <News />
-        <CharityBanner />
-        <VideoReports />
-        <GalleryBanner />
 
+        <Switch>
+          <Route exact path="/" component={MainPageContent} />
+          <Route path="/results" component={Results} />
+        </Switch>
         <Sponsors />
         <Footer />
       </div>

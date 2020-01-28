@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './GalleryBanner.module.scss';
-import Button from '../atoms/Button';
+import Button from '../../atoms/Button';
 
 const GalleryBanner = () => {
   return (
