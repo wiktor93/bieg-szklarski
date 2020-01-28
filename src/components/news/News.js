@@ -7,11 +7,11 @@ const News = () => {
     <section className={styles.wrap}>
       <h2>Aktualności</h2>
 
-      <div class={styles.news}>
+      <div className={styles.news}>
         {news.map(({img, alt, note}, i) => (
-          <a href="#">
+          <a href="#" key={i}>
             <article>
-              <div class={styles.photo}>
+              <div className={styles.photo}>
                 <img src={img} alt={alt} />
               </div>
               <p>{note}</p>
