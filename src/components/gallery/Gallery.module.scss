@@ -4,12 +4,12 @@
 
 .header {
   @include subpage-header();
-  background: url("../../images/headings/img-results.jpg") top no-repeat;
+  background: url("../../images/headings//img-gallery.jpg") no-repeat;
+  background-position: 50% 15%;
   background-size: cover;
-
 }
 
-.results {
+.content {
   @include subpage-content();
 }
 

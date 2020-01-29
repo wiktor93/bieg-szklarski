@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
-import Button from '../atoms/Button';
+import Button from '../../atoms/Button';
 import styles from './InfoBanner.module.scss';
-import {bannerDetails, startDate} from '../../assets/data';
-import calculateTimeLeft from '../../assets/calculateTimeLeft';
+import {bannerDetails, startDate} from '../../../assets/data';
+import calculateTimeLeft from '../../../assets/calculateTimeLeft';
 
 const InfoBanner = () => {
   const [time, setTime] = useState(calculateTimeLeft(startDate));

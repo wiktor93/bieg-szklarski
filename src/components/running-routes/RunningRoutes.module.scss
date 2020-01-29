@@ -1,0 +1,29 @@
+@import '../../styles/subpage-header.scss';
+@import '../../styles/subpage-content.scss';
+@import '../../styles/subpage-header-breakpoints.scss';
+
+.header {
+  @include subpage-header();
+  background: url("../../images/headings/img-routes.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.content {
+  @include subpage-content();
+
+  .records {
+    margin: 0 auto;
+    max-width: 1280px;
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 640px;
+      height: 56vw;
+      max-height: 360px;
+    }
+  }
+}
+
+@include subpage-header-breakpoints();

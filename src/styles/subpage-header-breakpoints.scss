@@ -1,0 +1,20 @@
+@mixin subpage-header-breakpoints {
+  @media (min-width:568px) {
+    .header h2 {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .header {
+      height: calc(25vh - var(--menuHeight));
+      margin-top: calc(var(--navHeight));
+    }
+  }
+
+  @media (min-width: 992px) {
+    .header h2 {
+      font-size: 50px;
+    }
+  }
+}

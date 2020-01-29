@@ -2,18 +2,19 @@
   margin: 10px 0;
   width: 144px;
   height: 45px;
-  background-color: white;
   color: #005CA9;
+  border: 1px solid #005CA9;
+  background-color: white;
 
+  line-height: 100%;
   font-family: Roboto, sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  line-height: 45px;
-  border: none;
   transition: 0.3s;
 
   &:hover {
     color: white;
+    border: none;
     background-color: #005CA9;
     box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
     cursor: pointer;

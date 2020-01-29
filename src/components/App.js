@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Navigation from './navigation/Navigation';
 import MainPageContent from './main-page-content/MainPageContent';
 import Results from './results/Results';
-import Gallery from './gallery/Gallery'
-import Registration from './registration/Registration'
-import RunningRoutes from './running-routes/RunningRoutes'
-import TermsAndConditions from './terms-and-conditions/TermsAndConditions'
-import Contact from './contact/Contact'
+import Gallery from './gallery/Gallery';
+import Registration from './registration/Registration';
+import RunningRoutes from './running-routes/RunningRoutes';
+import TermsAndConditions from './terms-and-conditions/TermsAndConditions';
+import ContactPage from './contact/ContactPage';
 
 import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
@@ -26,8 +26,7 @@ function App() {
           <Route path="/registration" component={Registration} />
           <Route path="/routes" component={RunningRoutes} />
           <Route path="/terms-and-conditions" component={TermsAndConditions} />
-          <Route path="/contact" component={Contact} />
-
+          <Route path="/contact" component={ContactPage} />
         </Switch>
         <Sponsors />
         <Footer />

@@ -4,13 +4,18 @@
 
 .header {
   @include subpage-header();
-  background: url("../../images/headings/img-results.jpg") top no-repeat;
+  background: url("../../images/headings/img-registration.jpg") no-repeat;
+  background-position: bottom;
   background-size: cover;
-
 }
 
-.results {
+.content {
   @include subpage-content();
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 @include subpage-header-breakpoints();

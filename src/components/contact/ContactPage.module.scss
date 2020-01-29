@@ -4,13 +4,13 @@
 
 .header {
   @include subpage-header();
-  background: url("../../images/headings/img-results.jpg") top no-repeat;
+  background: url("../../images/headings/img-contact.jpg") center no-repeat;
   background-size: cover;
-
 }
 
-.results {
+.content {
   @include subpage-content();
 }
+
 
 @include subpage-header-breakpoints();
