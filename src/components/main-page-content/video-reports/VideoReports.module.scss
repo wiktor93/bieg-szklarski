@@ -2,20 +2,21 @@
   margin: 0 auto 50px auto;
   width: 100%;
   max-width: 1280px;
+}
 
-  //youtube videos 
-  .videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+//youtube videos 
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    iframe {
-      width: 100%;
-      height: 56vw;
-      margin-bottom: 25px;
-    }
+  iframe {
+    width: 100%;
+    height: 56vw;
+    margin-bottom: 25px;
   }
 }
+
 
 
 
@@ -32,6 +33,5 @@
     width: 50%;
     height: calc(100vw *1/2 * 0.54);
     max-height: calc(1280px *1/2 * 0.54);
-    ;
   }
 }
