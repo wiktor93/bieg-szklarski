@@ -9,9 +9,9 @@ import Registration from './registration/Registration';
 import RunningRoutes from './running-routes/RunningRoutes';
 import TermsAndConditions from './terms-and-conditions/TermsAndConditions';
 import ContactPage from './contact/ContactPage';
-
 import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
+import PageNotFound from './page-not-found/PageNotFound';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route path="/routes" component={RunningRoutes} />
           <Route path="/terms-and-conditions" component={TermsAndConditions} />
           <Route path="/contact" component={ContactPage} />
+          <Route component={PageNotFound} />
         </Switch>
         <Sponsors />
         <Footer />

@@ -58,7 +58,9 @@ const ContactForm = () => {
               onChange={userToken => reCaptcha.validate(userToken)}
             />
 
-            <Button type="submit">Wyślij</Button>
+            <Button type="submit" disabled={isSubmitting}>
+              Wyślij
+            </Button>
           </Form>
         )}
       </Formik>
