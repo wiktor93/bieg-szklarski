@@ -3,7 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 const ReCaptchaBox = props => {
   return (
-    <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" {...props} />
+    <ReCAPTCHA sitekey="6Ld2p8UUAAAAAB-PuaOhkZyqEvOmbA8fgxXoeFz_" {...props} />
   );
 };
 

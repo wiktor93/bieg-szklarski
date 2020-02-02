@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import checkComponentPosition from '../../../assets/checkComponentPosition';
+import checkScrollPosition from '../../../assets/checkComponentPosition';
 import styles from './CharityBanner.module.scss';
 
 const elementID = 'charity-banner';
@@ -13,9 +13,16 @@ const CharityBanner = () => {
   const [trigger, setTrigger] = useState(false);
 
   useEffect(() => {
-    checkComponentPosition(elementID, () => setTrigger(true));
+    console.log('check1', trigger);
+    window.addEventListener(
+      'scroll',
+      checkScrollPosition(elementID, () => setTrigger(true))
+    );
+
+    // checkScrollPosition(elementID, () => setTrigger(true));
+
     if (trigger) {
-      const timeout = setTimeout(() => {
+      const timeoutId = setTimeout(() => {
         if (counter < 18) {
           setTextLine1(textLine1 + sentence.charAt(counter));
           setCounter(counter + 1);
@@ -24,8 +31,10 @@ const CharityBanner = () => {
           setCounter(counter + 1);
         }
       }, 125);
-      return () => clearTimeout(timeout);
+      return () => clearTimeout(timeoutId);
     }
+
+    // return () => window.removeEventListener('scroll', checkScrollPosition);
   });
 
   return (
