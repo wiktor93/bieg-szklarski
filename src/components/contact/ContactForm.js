@@ -1,38 +1,72 @@
 import React from 'react';
+import {Formik, Form, Field, ErrorMessage} from 'formik';
 
 import styles from './ContactForm.module.scss';
 import Button from '../atoms/Button';
+import Input from '../atoms/Input';
+import TextArea from '../atoms/TextArea';
+import ErrorBox from '../atoms/ErrorBox';
+import ReCaptcha from '../atoms/ReCaptcha';
 
 const ContactForm = () => {
+  let validationPassed = false;
+  const imNotARobot = userToken => {
+    userToken ? (validationPassed = true) : (validationPassed = false);
+    console.log(validationPassed, userToken);
+  };
+
   return (
     <>
-      <form className={styles.form} action="#">
-        <h2> Napisz do nas!</h2>
+      <h2>Napisz do nas!</h2>
+      <Formik
+        initialValues={{email: '', message: ''}}
+        validate={values => {
+          const errors = {};
+          if (!values.email) errors.email = 'Adres e-mail jest wymagany';
+          else if (!/^.+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
+            errors.email = 'Nieprawidłowy adrese-mail';
 
-        <input type="text" name="email" placeholder="Podaj swój e-mail" />
+          if (!values.message) errors.message = 'Wpisz wiadomość';
 
-        <textarea
-          name="message"
-          rows="10"
-          placeholder="Treść wiadomości"
-        ></textarea>
+          return errors;
+        }}
+        onSubmit={(values, {resetForm}) => {
+          console.log(values);
+          if (validationPassed) {
+            alert('Wiadomość została wysłana');
+            resetForm();
+          }
+        }}
+      >
+        {({isSubmitting}) => (
+          <Form className={styles.form}>
+            <Field
+              name="email"
+              as={Input}
+              type="text"
+              placeholder="Podaj swój e-mail"
+            />
+            <ErrorBox>
+              <ErrorMessage name="email" />
+            </ErrorBox>
+            <Field
+              name="message"
+              as={TextArea}
+              rows="10"
+              placeholder="Treść wiadomości"
+            />
+            <ErrorBox>
+              <ErrorMessage name="message" />
+            </ErrorBox>
 
-        <div
-          className="g-recaptcha"
-          data-callback="imNotARobot"
-          data-sitekey="6Ld2p8UUAAAAAB-PuaOhkZyqEvOmbA8fgxXoeFz_"
-        ></div>
+            <ReCaptcha onChange={userToken => imNotARobot(userToken)} />
 
-        <Button>Wyślij</Button>
-        {/* <button className="btn-submit">Wyślij</button> */}
-        <h3 className="email-confirmation">confirmation</h3>
-      </form>
-
-      <script
-        src="https://www.google.com/recaptcha/api.js"
-        async
-        defer
-      ></script>
+            <Button type="submit" disabled={isSubmitting}>
+              Wyślij
+            </Button>
+          </Form>
+        )}
+      </Formik>
     </>
   );
 };
