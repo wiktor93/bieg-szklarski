@@ -1,4 +1,4 @@
-const transitionStopper = () => {
+const resizeTransitionStopper = () => {
   let resizeTimer;
   window.addEventListener('resize', () => {
     document.body.classList.add('resize-transition-stopper');
@@ -9,4 +9,4 @@ const transitionStopper = () => {
   });
 };
 
-export default transitionStopper;
+export default resizeTransitionStopper;

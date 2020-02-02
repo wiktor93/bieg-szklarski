@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <>
       <nav className={styles.mobile}>
-        <NavLink to="/" className={styles.logo}>
+        <NavLink exact to="/" className={styles.logo}>
           <img src={logo} alt="bieg szklarski - logo" />
         </NavLink>
 
@@ -28,7 +28,7 @@ const Navigation = () => {
         </div>
       </nav>
 
-      <Menu open={toogle} />
+      <Menu isOpen={toogle} closeMenu={setToogle} />
     </>
   );
 };
