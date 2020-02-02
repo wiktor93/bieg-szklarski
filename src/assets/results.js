@@ -1,11 +1,11 @@
 export const results2019 = [
   {
     name: 'Open 25km',
-    link: './archives/2019/WynikiOPEN25km.pdf'
+    link: 'http://www.biegszklarski.pl/archives/2019/WynikiOPEN25km.pdf'
   },
   {
     name: 'Kategorie wiekowe',
-    link: './archives/2019/WynikiKategoriewiekowe.pdf'
+    link: 'http://www.biegszklarski.pl/archives/2019/WynikiKategoriewiekowe.pdf'
   },
   {
     name: 'Drużyny',

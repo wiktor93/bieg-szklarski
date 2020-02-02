@@ -6,15 +6,11 @@ import Button from '../atoms/Button';
 import Input from '../atoms/Input';
 import TextArea from '../atoms/TextArea';
 import ErrorBox from '../atoms/ErrorBox';
-import ReCaptcha from '../atoms/ReCaptcha';
+import ReCaptchaBox from '../atoms/ReCaptchaBox';
+import reCaptcha from '../../assets/reCaptcha';
+import sendEmail from '../../assets/sendEmail';
 
 const ContactForm = () => {
-  let validationPassed = false;
-  const imNotARobot = userToken => {
-    userToken ? (validationPassed = true) : (validationPassed = false);
-    console.log(validationPassed, userToken);
-  };
-
   return (
     <>
       <h2>Napisz do nas!</h2>
@@ -31,9 +27,8 @@ const ContactForm = () => {
           return errors;
         }}
         onSubmit={(values, {resetForm}) => {
-          console.log(values);
-          if (validationPassed) {
-            alert('Wiadomość została wysłana');
+          if (reCaptcha.validationPassed) {
+            sendEmail(values.email, values.message);
             resetForm();
           }
         }}
@@ -59,7 +54,9 @@ const ContactForm = () => {
               <ErrorMessage name="message" />
             </ErrorBox>
 
-            <ReCaptcha onChange={userToken => imNotARobot(userToken)} />
+            <ReCaptchaBox
+              onChange={userToken => reCaptcha.validate(userToken)}
+            />
 
             <Button type="submit" disabled={isSubmitting}>
               Wyślij
