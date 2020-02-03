@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
-import checkScrollPosition from '../../../assets/checkComponentPosition';
 import styles from './CharityBanner.module.scss';
 
 const elementID = 'charity-banner';
@@ -12,15 +11,28 @@ const CharityBanner = () => {
   const [counter, setCounter] = useState(0);
   const [trigger, setTrigger] = useState(false);
 
+
   useEffect(() => {
-    console.log('check1', trigger);
-    window.addEventListener(
-      'scroll',
-      checkScrollPosition(elementID, () => setTrigger(true))
-    );
+    const element = document.getElementById(elementID);
+    const checkScrollPosition = () => {
+      if (
+        window.scrollY + window.innerHeight - element.clientHeight >=
+        element.offsetTop
+      ) {
+        //when element will pass bottom line of the browser
+        window.removeEventListener('scroll', checkScrollPosition);
+        setTrigger(true);
+      }
+    };
 
-    // checkScrollPosition(elementID, () => setTrigger(true));
+    //when componen will mount
+    window.addEventListener('scroll', checkScrollPosition)
 
+    //when component will unmount
+    return () => window.removeEventListener('scroll', checkScrollPosition);
+  }, [])
+
+  useEffect(() => {
     if (trigger) {
       const timeoutId = setTimeout(() => {
         if (counter < 18) {
@@ -33,8 +45,6 @@ const CharityBanner = () => {
       }, 125);
       return () => clearTimeout(timeoutId);
     }
-
-    // return () => window.removeEventListener('scroll', checkScrollPosition);
   });
 
   return (
