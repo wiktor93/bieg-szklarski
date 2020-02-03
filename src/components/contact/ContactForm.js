@@ -1,5 +1,5 @@
 import React from 'react';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 import styles from './ContactForm.module.scss';
 import Button from '../atoms/Button';
@@ -15,25 +15,25 @@ const ContactForm = () => {
     <>
       <h2>Napisz do nas!</h2>
       <Formik
-        initialValues={{email: '', message: ''}}
+        initialValues={{ email: '', message: '' }}
         validate={values => {
           const errors = {};
           if (!values.email) errors.email = 'Adres e-mail jest wymagany';
           else if (!/^.+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
-            errors.email = 'Nieprawidłowy adrese-mail';
+            errors.email = 'Nieprawidłowy adres e-mail';
 
           if (!values.message) errors.message = 'Wpisz wiadomość';
 
           return errors;
         }}
-        onSubmit={(values, {resetForm}) => {
+        onSubmit={(values, { resetForm }) => {
           if (reCaptcha.validationPassed) {
             sendEmail(values.email, values.message);
             resetForm();
           }
         }}
       >
-        {({isSubmitting}) => (
+        {({ isSubmitting }) => (
           <Form className={styles.form}>
             <Field
               name="email"
