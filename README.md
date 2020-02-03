@@ -3,7 +3,7 @@
 Page for local running event.
 
 ## Used technologies and libraries:
-* React, Hooks
+* React, React-Router
 * Formik
 * Sass
 
