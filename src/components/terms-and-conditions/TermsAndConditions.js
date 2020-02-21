@@ -10,18 +10,18 @@ const TermsAndConditions = () => {
       </header>
 
       <section className={styles.content}>
-        <h2>REGULAMIN ZAWODÓW – „3 BIEG SZKLARSKI”</h2>
+        <h2>REGULAMIN ZAWODÓW – 3. BIEG SZKLARSKI</h2>
         <div className={styles.terms}>
           <h3>1. Cel</h3>
           <ul>
             <li>Upowszechnianie masowego biegania</li>
             <li>
-              Integracja mieszkańców dwóch sąsiadujących miast, Sandomierza i
+              Integracja mieszkańców dwóch sąsiadujących miast – Sandomierza i
               Tarnobrzega
             </li>
             <li>
               Wsparcie charytatywne dla wybranych imprez rekreacyjno-sportowych
-              powiatu tarnobrzeskiego i sandomierskiego.
+              powiatu tarnobrzeskiego i sandomierskiego
             </li>
           </ul>
 
@@ -41,70 +41,65 @@ const TermsAndConditions = () => {
 
             <li>
               Biuro Zawodów czynne w dniu zawodów od godziny 8:00 do 9:45 dla
-              Biegu Głównego i od 8:00 do 10:15 dla Szklana Piątka i Nordic
-              Walking – Miejsce: Bulwar im. Marszałka Piłsudskiego nad Wisłą w
-              Sandomierzu.
+              Biegu Głównego i od 8:00 do 10:45 dla Szklanej Piątki i Nordic
+              Walking – miejsce: Bulwar im. Marszałka Piłsudskiego nad Wisłą w
+              Sandomierzu
             </li>
 
             <li>
               Wyjazd zawodników na START autokarami godzina: 9:45 – Bieg Główny
-              21,0975km / 10:15 – Szklana Piątka / Nordic Walking 5km.
+              / 10:15 – Szklana Piątka i Nordic Walking
             </li>
 
             <li>Można wziąć udział w 3 rodzajach zawodów:</li>
+            <ul>
+              <li>
+                Biegu Główny 21,0975 km – START godzina 11:00 – Zamek Dzikowski
+                w Tarnobrzegu
+              </li>
+
+              <li>
+                Szklana Piątka 5 km – START godzina 12:00 – Brama Zakładu w
+                Sandomierzu os. Huta, ul. Portowa 24
+              </li>
+
+              <li>
+                Nordic Walking 5 km – START godzina 12:00 – Brama Zakładu w
+                Sandomierzu os. Huta, ul. Portowa 24
+              </li>
+            </ul>
 
             <li>
-              Biegu Główny 21,0975 km – START godzina 11:00 - Zamek Dzikowski w
-              Tarnobrzegu.
+              Trasa Biegu Głównego – START Zamek Dzikowski w Tarnobrzegu / Plac
+              Czerwony / ul. Przy Zalewie Dzików / Zakrzów / Sielec / Wielowieś
+              / Koćmierzów / os. Huta Sandomierz / Bulwar nad Wisłą w
+              Sandomierzu META
             </li>
 
             <li>
-              Szklana Piątka 5km – START godzina 12:00 – Brama Zakładu w
-              Sandomierzu os. Huta
+              Trasa Szklanej Piątki – START Brama Zakładu na os. Huta Sandomierz
+              / os Vitrum / ul. Mostowa / stary most / Bulwar na Wisłą w
+              Sandomierzu - META
             </li>
+
+            <li>Trasa Nordic Walking – taka sama jak Szklanej Piątki</li>
 
             <li>
-              Nordic Walking 5km – START godzina 12:00 - Brama Zakładu w
-              Sandomierzu os. Huta
+              Opis trasy – płaska, oznakowana
+              <ul>
+                <li>Bieg Główny – 90% asfalt, 10% szuter</li>
+                <li>Szklana Piątka, Nordic Walking – 100% asfalt </li>
+              </ul>
             </li>
 
-            <li>
-              Biegi dla Dzieci i Młodzieży 200-6000m – POCZĄTEK godzina 13:00 -
-              Bulwar im. Marszałka Piłsudskiego w Sandomierzu.{' '}
-            </li>
-
-            <li>
-              Trasa Biegu Głównego 21,0975 km – START - Zamek Dzikowski w
-              Tarnobrzegu / Plac Czerwony / ul. Przy Zalewie Dzików / Zakrzów /
-              Sielec / Wielowieś / Koćmierzów / os Huta Sandomierz / Bulwar nad
-              Wisłą w Sandomierzu – META.
-            </li>
-
-            <li>
-              Trasa Szklana Piątka 5km – START - Brama Zakładu na os Huta
-              Sandomierz / os Vitrum / ul. Mostowa / stary most / Bulwar na
-              Wisłą w Sandomierzu - META.
-            </li>
-
-            <li>Trasa Nordic Walking 5km – taka sama jak Szklana Piątka.</li>
-
-            <li>
-              Opis trasy – płaska / oznakowana / 5km nawierzchnia asfaltowa w
-              100% / 21,0975km nawierzchnia asfaltowa 90%, nawierzchnia szutrowa
-              10%.
-            </li>
-
-            <li>
-              Elektroniczny pomiar czasu: START/ META. Pomiar za pomocą chipów
-              mocowanych do butów
-            </li>
+            <li>Pomiar czasu – elektroniczny, chipy mocowane do butów</li>
           </ul>
 
           <h3>4. Warunki uczestnictwa</h3>
           <ul>
             <li>
-              Uczestnikiem biegu może zostać każda osoba, która do dnia 15
-              września 2019 roku ukończy 16 lat. Warunkiem udziału w Biegu jest
+              Uczestnikiem biegu może zostać każda osoba, która do dnia 20
+              września 2020 roku ukończy 16 lat. Warunkiem udziału w Biegu jest
               przedstawienie aktualnego zaświadczenia lekarskiego o braku
               przeciwwskazań do udziału w biegu długodystansowym lub
               własnoręczne złożenie podpisu pod oświadczeniem o zdolności do
@@ -131,11 +126,12 @@ const TermsAndConditions = () => {
               www.timekeeper.pl
             </li>
 
-            <li>Ostateczny termin zgłoszeń elektronicznych: 15.09.2020r.</li>
+            <li>Ostateczny termin zgłoszeń elektronicznych: 15.09.2020 r.</li>
 
             <li>
-              Zgłoszenia przyjmowane będą również w Biurze Zawodów w dniu startu
-              od 8:00 do 10:15 (Bieg Główny tylko do 9:45).
+              Zgłoszenia przyjmowane będą również w Biurze Zawodów w dniu
+              startu: Bieg Główny od 8:00 do 9:45 / Szklana Piątka i Nordic
+              Walking od 8:00 do 10:45
             </li>
 
             <li>
@@ -144,25 +140,25 @@ const TermsAndConditions = () => {
                 <li>
                   wpłacona do dnia 15.09.2020:
                   <ul>
-                    <li>Bieg Główny 21,0975 km = 40 zł</li>
-                    <li>Szklana Piątka i Nordic Walking 5km = 30 zł</li>
+                    <li>Bieg Główny = 40 zł</li>
+                    <li>Szklana Piątka i Nordic Walking = 30 zł</li>
                   </ul>
                 </li>
                 <li>
                   wpłacona po 15.09.2020 i w dniu zawodów:
                   <ul>
-                    <li>Bieg Główny 21,0975 km = 50 zł </li>
-                    <li>Szklana Piątka i Nordic Walking 5km = 40 zł</li>
+                    <li>Bieg Główny = 50 zł </li>
+                    <li>Szklana Piątka i Nordic Walking = 40 zł</li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <span>
+            <li>
               <b>
                 Wpisowe przeznaczymy na wsparcie imprez sportowo-rekreacyjnych
                 dla dzieci i młodzieży w powiecie tarnobrzeskim i sandomierskim.
               </b>
-            </span>
+            </li>
 
             <li>
               Z opłaty startowej zwolnione są wyłącznie osoby legitymujące się
@@ -177,66 +173,77 @@ const TermsAndConditions = () => {
               upominki
             </li>
             <li>
-              Na starcie, mecie oraz trasie biegu dostępna opieka medyczna.
+              Na starcie, mecie oraz trasie biegu dostępna opieka medyczna
             </li>
             <li>
-              Punkty odżywczo-wodne tylko na trasie Biegu Głównego na 7km i 14km
-              (woda niegazowana kubek lub butelka oraz czekolada gorzka, banan)
+              Punkty wodno-odżywcze tylko na trasie Biegu Głównego – 7. i 14.
+              kilometr (woda niegazowana, kubek lub butelka, gorzka czekolada i
+              banan)
+            </li>
+
+            <li>Na starcie dostępne będą toalety i umywalki</li>
+            <li>Na mecie będą napoje i ciepły posiłek regeneracyjny</li>
+            <li>
+              Przy Biurze Zawodów przez cały czas trwania imprezy dostępne są
+              toalety, umywalki oraz depozyt
             </li>
             <li>
-              Na mecie biegu do dyspozycji napoje i ciepły posiłek regeneracyjny
-            </li>
-            <li>Na starcie dostępne są toalety i umywalnie</li>
-            <li>
-              Na mecie (przy Biurze Zawodów) przez cały czas trwania imprezy
-              dostępne są toalety, umywalnie oraz depozyt
-            </li>
-            <li>
-              W depozycie prosimy o niepozostawianie drogocennych rzeczy.
-              Organizator nie będzie ponosił odpowiedzialności w takim przypadku
+              W depozycie prosimy nie pozostawiać wartościowych przedmiotów.
+              Organizator nie ponosi odpowiedzialności za zaginione rzeczy.
             </li>
           </ul>
 
           <h3>7. KLASYFIKACJE ZAWODÓW</h3>
           <ul>
-            <li>Generalna Bieg Główny – 21,0975 km K / M</li>
-            <li>Generalna Szklana Piątka – 5km K / M</li>
-            <li>Generalna Nordic Walking – 5km K / M</li>
+            <li>Generalna Bieg Główny – K / M</li>
+            <li>Generalna Szklana Piątka – K / M</li>
+            <li>Generalna Nordic Walking – K / M</li>
             <li>
-              Drużynowa – 4 najlepsze wyniki. K i M z Biegu Głównego 21,0975km
-              plus K i M ze Szklanej Piątki 5km.{' '}
+              Drużynowa – 4 najlepsze wyniki: K i M z Biegu Głównego plus K i M
+              ze Szklanej Piątki
             </li>
+            <li>Kategorie wiekowe K / M:</li>
+            <ul>
+              <li>K30 i M30 – (rocznik włącznie do 1991)</li>
+              <li>K45 i M45 – (roczniki 1990 – 1976)</li>
+              <li>K60 i M60 – (roczniki 1975 – 1956)</li>
+              <li>K60+ i M60+ – (włącznie od rocznika 1960+)</li>
+            </ul>
             <li>
-              Kategorie wiekowe K / M: K30 i M30 – (rocznik włącznie do 1991)
-              K45 i M45 – (roczniki 1990 – 1976) K60 i M60 – (roczniki 1975 –
-              19561 K60+ i M60+ – (włącznie od rocznika 1960+)
+              Uwaga: W przypadku gdy w danej kategorii będzie mniej niż 5
+              uczestników, zostanie ona połączona z kategorią sąsiednią.
             </li>
             <li>Niepełnosprawni ruchowo K / M:</li>
-            <li>
-              Uwaga: Kategorie zostaną zdefiniowane w zależności od zgłoszeń
-              uczestników. Kategorie wiekowe w przypadkach mniej niż pięciu
-              uczestników będą łączone do kategorii sąsiednich{' '}
-            </li>
+            <ul>
+              <li>
+                Kategorie zostaną zdefiniowane w zależności od zgłoszeń
+                uczestników
+              </li>
+            </ul>
             <li>Klasyfikacje dodatkowe:</li>
-            <li>Najstarszy / Najmłodszy uczestnik biegu 21,0975km i 5km</li>
-            <li>
-              Najlepszy pracownik firmy NSG GROUP (K i M) biegu 21,0975km i 5km
-            </li>
+            <ul>
+              <li>
+                Najstarszy / Najmłodszy uczestnik Biegu Głównego i Szklanej
+                Piątki
+              </li>
+              <li>
+                Najlepszy pracownik firmy NSG GROUP (K / M) Biegu Głównego i
+                Szklanej Piątki
+              </li>
+            </ul>
           </ul>
 
           <h3>8. NAGRODY, UPOMINKI</h3>
           <ul>
             <li>
-              Nagrody rzeczowe dla zwycięzców w klasyfikacji generalnej - Bieg
-              Główny 21,0975km (K / M), Szklana Piątka 5km (K / M), Nordic
-              Walking 5km (K / M).
+              Nagrody rzeczowe dla zwycięzców w klasyfikacji generalnej – Bieg
+              Główny (K / M), Szklana Piątka (K / M), Nordic Walking (K / M)
             </li>
-            Upominki dla zwycięzców w pozostałych kategoriach
-            <li>Każdy uczestnik Biegu otrzyma pamiątkowy medal.</li>
+            <li>Upominki dla zwycięzców w pozostałych kategoriach</li>
+            <li>Każdy uczestnik Biegu otrzyma pamiątkowy medal</li>
             <li>
               Spośród wszystkich uczestników biegu, obecnych na ceremonii
-              dekoracji w miarę posiadanych środków od sponsorów, zostaną
-              rozlosowane nagrody rzeczowe
+              dekoracji, zostaną rozlosowane nagrody rzeczowe
             </li>
           </ul>
 
@@ -253,16 +260,16 @@ const TermsAndConditions = () => {
             </li>
 
             <li>
-              Przetwarzanie danych, o którym mowa w punkcie 9.1. obejmuje
+              Przetwarzanie danych, o którym mowa w powyższym punkcie obejmuje
               również publikację: imienia, nazwiska, roku urodzenia, nazwy
-              miejscowości i nazwy klubu.
+              miejscowości, nazwy klubu, zdjęcia wizerunku.
             </li>
           </ul>
 
           <h3>10. POSTANOWIENIA KOŃCOWE</h3>
           <ul>
             <li>
-              W czasie trwania biegu Uczestnicy powinni stosować się do poleceń
+              W czasie trwania biegu, uczestnicy powinni stosować się do poleceń
               wydawanych przez osoby odpowiedzialne za bezpieczeństwo, służby
               porządkowe oraz inne osoby wyznaczone przez Organizatora
             </li>
@@ -276,43 +283,42 @@ const TermsAndConditions = () => {
               wyraża zgodę na udzielenie pierwszej pomocy medycznej, wykonanie
               innych zabiegów medycznych oraz transport poszkodowanego w
               bezpieczne miejsce przez personel medyczny i paramedyczny
-              działający w imieniu organizatora
+              działający w imieniu Organizatora.
             </li>
             <li>
               Uczestnik oświadcza, że jest zdolny do udziału w biegu, nie są mu
               znane żadne powody o charakterze zdrowotnym wykluczające go z
-              udziału w biegu oraz że startuje na własną odpowiedzialność,
-              przyjmuje do wiadomości, że udział w biegu wiąże się z wysiłkiem
+              udziału w biegu oraz że startuje na własną odpowiedzialność.
+              Przyjmuje do wiadomości, że udział w biegu wiąże się z wysiłkiem
               fizycznym i pociąga za sobą naturalne ryzyko wypadku, odniesienia
-              obrażeń ciała i urazów fizycznych (w tym śmierci), a także szkód i
-              strat o charakterze majątkowym. Ponadto, z udziałem w zawodach
-              mogą wiązać się inne, niemożliwe w tej chwili do przewidzenia,
-              czynniki ryzyka. Podpisanie oświadczenia o znajomości regulaminu
-              oznacza, że Uczestnik rozważył i ocenił zakres i charakter ryzyka
-              wiążącego się z udziałem w biegu, startuje dobrowolnie i wyłącznie
-              na własną odpowiedzialność. Decyzje lekarzy dotyczące
-              kontynuowania biegu podczas imprezy są ostateczne i nieodwołalne
+              obrażeń ciała i urazów fizycznych, a także szkód i strat o
+              charakterze majątkowym. Ponadto, z udziałem w zawodach mogą wiązać
+              się inne, niemożliwe w tej chwili do przewidzenia czynniki ryzyka.
+              Podpisanie oświadczenia o znajomości regulaminu oznacza, że
+              uczestnik rozważył i ocenił zakres oraz charakter ryzyka wiążącego
+              się z udziałem w biegu. Startuje dobrowolnie i wyłącznie na własną
+              odpowiedzialność. Decyzje lekarzy dotyczące kontynuowania biegu
+              podczas imprezy są ostateczne i nieodwołalne.
             </li>
             <li>
-              Zapisując się do udziału w zawodach uczestnik akceptuje niniejszy
+              Zapisując się do udziału w zawodach, uczestnik akceptuje niniejszy
               regulamin i wyraża zgodę na nieodpłatne wykorzystanie jego
               wizerunku utrwalonego w formie fotografii lub zapisu wideo oraz
               udziela Organizatorowi nieodpłatnej licencji na wykorzystanie go
               na wszystkich polach eksploatacji, w tym: utrwalania i
               rozpowszechniania w dowolnej formie oraz wprowadzanie do pamięci
               komputera, wykorzystania do promocji i organizacji imprezy, na
-              promocyjnych materiałach drukowanych Organizatora, w prasie, na
-              stronach internetowych oraz w przekazach telewizyjnych i
+              promocyjnych materiałach drukowanych przez Organizatora, w prasie,
+              na stronach internetowych oraz w przekazach telewizyjnych i
               radiowych.
             </li>
             <li>
               Wiążąca i ostateczna interpretacja niniejszego regulaminu
-              przysługuje wyłącznie organizatorowi Biegu Szklarskiego. W
-              sprawach nieujętych w Regulaminie rozstrzyga Organizator. Jeżeli
+              przysługuje wyłącznie Organizatorowi Biegu Szklarskiego. Sprawy
+              nie ujęte w regulaminie są rozstrzygane przez organizatora. Jeżeli
               którekolwiek z postanowień Regulaminu zostanie częściowo lub w
               całości uznane za nieważne lub niemożliwe do wyegzekwowania –
-              wszelkie inne postanowienia (w całości bądź częściowo) zachowują
-              ważność.
+              wszelkie inne postanowienia zachowują ważność.
             </li>
           </ul>
 
@@ -325,6 +331,8 @@ const TermsAndConditions = () => {
           </ul>
         </div>
       </section>
+
+      <hr />
     </>
   );
 };
