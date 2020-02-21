@@ -8,4 +8,4 @@ Page for local running event.
 * Sass
 
 ## Link:
-www.biegszklarski.pl
+https://biegszklarski.pl/
