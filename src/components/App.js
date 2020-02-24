@@ -12,11 +12,14 @@ import ContactPage from './contact/ContactPage';
 import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
 import PageNotFound from './page-not-found/PageNotFound';
+import ScrollToTop from '../hooks/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ScrollToTop />
+
         <Navigation />
 
         <Switch>
