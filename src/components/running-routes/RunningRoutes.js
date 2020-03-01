@@ -6,7 +6,7 @@ const RunningRoutes = () => {
   return (
     <>
       <header className={styles.header}>
-        <h2>Trasy biegu szklarskiego</h2>
+        <h2>Trasa</h2>
       </header>
 
       <section className={styles.content}>

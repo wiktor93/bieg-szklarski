@@ -86,7 +86,7 @@ const Map = () => {
 
     const overlayMaps = {
       Półmaraton: track1,
-      '5km + NW': track2
+      'Szklana Piątka / NW': track2
     };
 
     //tracks layer toogle

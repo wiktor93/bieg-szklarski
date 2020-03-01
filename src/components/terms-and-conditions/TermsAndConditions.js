@@ -37,7 +37,7 @@ const TermsAndConditions = () => {
 
           <h3>3. TERMIN, DYSTANS, OPIS BIEGU</h3>
           <ul>
-            <li>Termin – 20.09.2019 r. (niedziela)</li>
+            <li>Termin – 20.09.2020 r. (niedziela)</li>
 
             <li>
               Biuro Zawodów czynne w dniu zawodów od godziny 8:00 do 9:45 dla
@@ -52,7 +52,7 @@ const TermsAndConditions = () => {
             </li>
 
             <li>Można wziąć udział w 3 rodzajach zawodów:</li>
-            <ul>
+            <ul className={styles.nested}>
               <li>
                 Biegu Główny 21,0975 km – START godzina 11:00 – Zamek Dzikowski
                 w Tarnobrzegu
@@ -86,7 +86,7 @@ const TermsAndConditions = () => {
 
             <li>
               Opis trasy – płaska, oznakowana
-              <ul>
+              <ul className={styles.nested}>
                 <li>Bieg Główny – 90% asfalt, 10% szuter</li>
                 <li>Szklana Piątka, Nordic Walking – 100% asfalt </li>
               </ul>
@@ -136,17 +136,17 @@ const TermsAndConditions = () => {
 
             <li>
               Zawodników obowiązuje opłata startowa w wysokości:
-              <ul>
+              <ul className={styles.nested}>
                 <li>
                   wpłacona do dnia 15.09.2020:
-                  <ul>
+                  <ul className={styles.nested}>
                     <li>Bieg Główny = 40 zł</li>
                     <li>Szklana Piątka i Nordic Walking = 30 zł</li>
                   </ul>
                 </li>
                 <li>
                   wpłacona po 15.09.2020 i w dniu zawodów:
-                  <ul>
+                  <ul className={styles.nested}>
                     <li>Bieg Główny = 50 zł </li>
                     <li>Szklana Piątka i Nordic Walking = 40 zł</li>
                   </ul>
@@ -154,15 +154,14 @@ const TermsAndConditions = () => {
               </ul>
             </li>
             <li>
+              Z opłaty startowej zwolnione są wyłącznie osoby legitymujące się
+              dokumentem o niepełnosprawności.
+            </li>
+            <li>
               <b>
                 Wpisowe przeznaczymy na wsparcie imprez sportowo-rekreacyjnych
                 dla dzieci i młodzieży w powiecie tarnobrzeskim i sandomierskim.
               </b>
-            </li>
-
-            <li>
-              Z opłaty startowej zwolnione są wyłącznie osoby legitymujące się
-              dokumentem o niepełnosprawności.
             </li>
           </ul>
 
@@ -203,7 +202,7 @@ const TermsAndConditions = () => {
               ze Szklanej Piątki
             </li>
             <li>Kategorie wiekowe K / M:</li>
-            <ul>
+            <ul className={styles.terms}>
               <li>K30 i M30 – (rocznik włącznie do 1991)</li>
               <li>K45 i M45 – (roczniki 1990 – 1976)</li>
               <li>K60 i M60 – (roczniki 1975 – 1956)</li>
@@ -214,7 +213,7 @@ const TermsAndConditions = () => {
               uczestników, zostanie ona połączona z kategorią sąsiednią.
             </li>
             <li>Niepełnosprawni ruchowo K / M:</li>
-            <ul>
+            <ul className={styles.terms}>
               <li>
                 Kategorie zostaną zdefiniowane w zależności od zgłoszeń
                 uczestników

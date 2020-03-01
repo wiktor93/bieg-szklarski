@@ -1,6 +1,15 @@
+@import '../../styles/subpage-header.scss';
+@import '../../styles/subpage-header-breakpoints.scss';
+
+.header {
+  @include subpage-header();
+  background: url("../../images/headings/img-page-not-found.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .error {
   max-width: 1280px;
-  height: calc(100vh - var(--navHeight));
+  height: 60vh;
   margin: 0 auto;
   padding: 0 5%;
   text-align: center;
@@ -13,3 +22,5 @@
     margin: 15px;
   }
 }
+
+@include subpage-header-breakpoints();

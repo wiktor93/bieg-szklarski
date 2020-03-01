@@ -25,6 +25,10 @@
     list-style: disc;
     margin: 5px 0 25px 40px;
 
+    &.nested {
+      margin: 5px 0 0px 40px;
+    }
+
     li {
       margin-bottom: 5px;
       line-height: 150%;
@@ -37,5 +41,7 @@
     text-transform: uppercase;
   }
 }
+
+
 
 @include subpage-header-breakpoints();
