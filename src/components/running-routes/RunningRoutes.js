@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './RunningRoutes.module.scss';
+import Map from '../interactive-map/Map';
 
 const RunningRoutes = () => {
   return (
@@ -10,9 +11,8 @@ const RunningRoutes = () => {
 
       <section className={styles.content}>
         <div className={styles.records}>
-          <h2>3. Bieg Szklarski — 20.09.2019</h2>
-          <h3>Materiał dostępny wkrótce</h3>
-
+          <h2>3. Bieg Szklarski — 20.09.2020</h2>
+          <Map />
           <h2>2. Bieg Szklarski — 15.09.2019</h2>
           <iframe
             title="2. Bieg Szklarski - Prezentacja trasy"
