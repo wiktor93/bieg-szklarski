@@ -8,7 +8,7 @@ const Results = () => {
   return (
     <>
       <header className={styles.header}>
-        <h2>Wyniki zawodów</h2>
+        <h2>Wyniki</h2>
       </header>
 
       <section className={styles.results}>
