@@ -8,7 +8,7 @@ const GalleryBanner = () => {
     <section className={styles.wraper}>
       <div className={styles.btn_container}>
         <p>Zdjęcia z imprezy</p>
-        <Button href="/gallery">Galeria</Button>
+        <Button href="/galeria">Galeria</Button>
       </div>
     </section>
   );

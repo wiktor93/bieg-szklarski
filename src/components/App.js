@@ -24,12 +24,12 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={MainPageContent} />
-          <Route path="/results" component={Results} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path="/registration" component={Registration} />
-          <Route path="/routes" component={RunningRoutes} />
-          <Route path="/terms-and-conditions" component={TermsAndConditions} />
-          <Route path="/contact" component={ContactPage} />
+          <Route path="/wyniki" component={Results} />
+          <Route path="/galeria" component={Gallery} />
+          <Route path="/zapisy" component={Registration} />
+          <Route path="/trasa" component={RunningRoutes} />
+          <Route path="/regulamin" component={TermsAndConditions} />
+          <Route path="/kontakt" component={ContactPage} />
           <Route component={PageNotFound} />
         </Switch>
         <Sponsors />

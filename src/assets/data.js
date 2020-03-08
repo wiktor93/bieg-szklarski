@@ -8,12 +8,12 @@ export const contactDetails = {
 
 export const routes = [
   {name: 'Start', path: '/'},
-  {name: 'Wyniki', path: './results'},
-  {name: 'Galeria', path: './gallery'},
-  {name: 'Zapisy', path: './registration'},
-  {name: 'Trasa', path: './routes'},
-  {name: 'Regulamin', path: '/terms-and-conditions'},
-  {name: 'Kontakt', path: '/contact'}
+  {name: 'Wyniki', path: './wyniki'},
+  {name: 'Galeria', path: './galeria'},
+  {name: 'Zapisy', path: './zapisy'},
+  {name: 'Trasa', path: './trasa'},
+  {name: 'Regulamin', path: '/regulamin'},
+  {name: 'Kontakt', path: '/kontakt'}
 ];
 
 export const bannerDetails = [

@@ -24,7 +24,7 @@ const InfoBanner = () => {
           <span>{time.hours}</span>h<span>{time.minutes}</span>min
           <span>{time.seconds}</span>s
         </p>
-        <Button href="./registration">Zapisz się</Button>
+        <Button href="./zapisy">Zapisz się</Button>
       </div>
 
       <ul className={styles.details}>
