@@ -26,7 +26,6 @@ const Gallery = () => {
         <ul>
           {gallery2018.map(({name, link}, i) => (
             <li key={i}>
-              {' '}
               <a href={link} target="_blank">
                 {name}
               </a>

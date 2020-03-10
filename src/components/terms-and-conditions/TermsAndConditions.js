@@ -48,7 +48,7 @@ const TermsAndConditions = () => {
 
             <li>
               Wyjazd zawodników na START autokarami godzina: 9:45 – Bieg Główny
-              / 10:15 – Szklana Piątka i Nordic Walking
+              / 10:45 – Szklana Piątka i Nordic Walking
             </li>
 
             <li>Można wziąć udział w 3 rodzajach zawodów:</li>

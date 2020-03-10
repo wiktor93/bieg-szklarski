@@ -1,6 +1,8 @@
 export const currentYear = new Date().getUTCFullYear();
 export const startDate = new Date('2020', '09', '20', '11');
 
+export const registrationLink = 'https://timekeeper.pl/bieg/?bieg_id=841';
+
 export const contactDetails = {
   email: 'biegszklarski@gmail.com',
   phone: '+48 605 192 829'

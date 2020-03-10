@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import Button from '../../atoms/Button';
 import styles from './InfoBanner.module.scss';
-import {bannerDetails, startDate} from '../../../assets/data';
+import {bannerDetails, startDate, registrationLink} from '../../../assets/data';
 import calculateTimeLeft from '../../../assets/calculateTimeLeft';
 
 const InfoBanner = () => {
@@ -24,7 +24,7 @@ const InfoBanner = () => {
           <span>{time.hours}</span>h<span>{time.minutes}</span>min
           <span>{time.seconds}</span>s
         </p>
-        <Button href="./zapisy">Zapisz się</Button>
+        <Button href={registrationLink}>Zapisz się</Button>
       </div>
 
       <ul className={styles.details}>
