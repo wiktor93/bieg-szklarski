@@ -29,10 +29,9 @@
     justify-content: center;
 
     a {
-
       display: flex;
       justify-content: center;
-      text-decoration-line: none;
+      text-decoration: none;
       transition: 0.3s;
       color: #005CA9;
 
@@ -74,7 +73,7 @@
 
       a {
         flex-grow: 1;
-        border-left: rgba(0, 93, 169, 0.75) solid 0.5px;
+        // border-left: rgba(0, 93, 169, 0.75) solid 0.5px;
 
         &:first-child {
           border-left: none;
