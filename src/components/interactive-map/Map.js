@@ -8,8 +8,8 @@ import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
 import gpxTrack1 from '../../assets/gpx/polmaraton.gpx';
 import gpxTrack2 from '../../assets/gpx/5km.gpx';
 
-import startPoint from '../../icons/green-location-pin.svg';
-import finishPoint from '../../icons/red-location-pin.svg';
+import startPoint from '../../assets/icons/green-location-pin.svg';
+import finishPoint from '../../assets/icons/red-location-pin.svg';
 
 import styles from './Map.module.scss';
 
@@ -30,17 +30,17 @@ const Map = () => {
             tileSize: 512,
             zoomOffset: -1,
             accessToken:
-              'pk.eyJ1Ijoid2lrdDByIiwiYSI6ImNrNzBrOHN1aTBhd3EzZG80enBlaDdxcjYifQ.QO7vTDtTkw8cPAdoZYqTDQ'
+              'pk.eyJ1Ijoid2lrdDByIiwiYSI6ImNrNzBrOHN1aTBhd3EzZG80enBlaDdxcjYifQ.QO7vTDtTkw8cPAdoZYqTDQ',
           }
-        )
+        ),
       ],
-      zoomControl: false
+      zoomControl: false,
     });
 
     //add full-screen button
     mapRef.current.addControl(
       new L.Control.Fullscreen({
-        position: 'bottomright'
+        position: 'bottomright',
       })
     );
     //change zoom controlls position
@@ -54,17 +54,17 @@ const Map = () => {
       async: true,
       polyline_options: {
         color: '#005DA8',
-        lineCap: 'round'
+        lineCap: 'round',
       },
       marker_options: {
         startIconUrl: startPoint,
-        endIconUrl: finishPoint
-      }
+        endIconUrl: finishPoint,
+      },
     })
-      .on('loaded', function(e) {
+      .on('loaded', function (e) {
         mapRef.current.fitBounds(e.target.getBounds());
       })
-      .on('add', function(e) {
+      .on('add', function (e) {
         mapRef.current.fitBounds(e.target.getBounds());
       })
       .addTo(mapRef.current);
@@ -74,19 +74,19 @@ const Map = () => {
       async: true,
       polyline_options: {
         color: '#005DA8',
-        lineCap: 'round'
+        lineCap: 'round',
       },
       marker_options: {
         startIconUrl: startPoint,
-        endIconUrl: finishPoint
-      }
-    }).on('add', function(e) {
+        endIconUrl: finishPoint,
+      },
+    }).on('add', function (e) {
       mapRef.current.fitBounds(e.target.getBounds());
     });
 
     const overlayMaps = {
       Półmaraton: track1,
-      'Szklana Piątka / NW': track2
+      'Szklana Piątka / NW': track2,
     };
 
     //tracks layer toogle

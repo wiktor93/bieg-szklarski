@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './Sponsors.module.scss';
 import partners from '../../assets/partners';
 import mediaPatrones from '../../assets/mediaPatrones';
-import nsg from '../../images/sponsors/NSG.png';
+import nsg from '../../assets/images/sponsors/NSG.png';
 
 const Sponsors = () => {
   return (

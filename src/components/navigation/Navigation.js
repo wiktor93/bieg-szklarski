@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 
 import Menu from './Menu';
-import logo from '../../images/logo.png';
+import logo from '../../assets/images/logo.png';
 import styles from './Navigation.module.scss';
 
 const Navigation = () => {

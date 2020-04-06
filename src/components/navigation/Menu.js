@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 import {routes} from '../../assets/data';
 import styles from './Menu.module.scss';
-import resizeTransitionStopper from '../../assets/resizeTransitionStopper';
+import resizeTransitionStopper from '../../utils/resizeTransitionStopper';
 
 const Menu = ({isOpen, closeMenu}) => {
   resizeTransitionStopper();

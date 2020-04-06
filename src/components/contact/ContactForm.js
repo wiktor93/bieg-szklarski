@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import {Formik, Form, Field, ErrorMessage} from 'formik';
 
 import styles from './ContactForm.module.scss';
 import Button from '../atoms/Button';
@@ -7,16 +7,16 @@ import Input from '../atoms/Input';
 import TextArea from '../atoms/TextArea';
 import ErrorBox from '../atoms/ErrorBox';
 import ReCaptchaBox from '../atoms/ReCaptchaBox';
-import reCaptcha from '../../assets/reCaptcha';
-import sendEmail from '../../assets/sendEmail';
+import reCaptcha from '../../utils/reCaptcha';
+import sendEmail from '../../utils/sendEmail';
 
 const ContactForm = () => {
   return (
     <>
       <h2>Napisz do nas!</h2>
       <Formik
-        initialValues={{ email: '', message: '' }}
-        validate={values => {
+        initialValues={{email: '', message: ''}}
+        validate={(values) => {
           const errors = {};
           if (!values.email) errors.email = 'Adres e-mail jest wymagany';
           else if (!/^.+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
@@ -26,14 +26,14 @@ const ContactForm = () => {
 
           return errors;
         }}
-        onSubmit={(values, { resetForm }) => {
+        onSubmit={(values, {resetForm}) => {
           if (reCaptcha.validationPassed) {
             sendEmail(values.email, values.message);
             resetForm();
           }
         }}
       >
-        {({ isSubmitting }) => (
+        {({isSubmitting}) => (
           <Form className={styles.form}>
             <Field
               name="email"
@@ -55,7 +55,7 @@ const ContactForm = () => {
             </ErrorBox>
 
             <ReCaptchaBox
-              onChange={userToken => reCaptcha.validate(userToken)}
+              onChange={(userToken) => reCaptcha.validate(userToken)}
             />
 
             <Button type="submit" disabled={isSubmitting}>

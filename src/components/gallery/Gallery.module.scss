@@ -4,7 +4,7 @@
 
 .header {
   @include subpage-header();
-  background: url("../../images/headings//img-gallery.jpg") no-repeat;
+  background: url("../../assets/images/headings/img-gallery.jpg") no-repeat;
   background-position: 50% 15%;
   background-size: cover;
 }
