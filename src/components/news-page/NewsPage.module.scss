@@ -1,0 +1,21 @@
+@import '../../styles/subpage-header.scss';
+@import '../../styles/subpage-content.scss';
+@import '../../styles/subpage-header-breakpoints.scss';
+
+.header {
+  @include subpage-header();
+  background: url("../../assets/images/headings/img-news.jpg") no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.content {
+  @include subpage-content();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@include subpage-header-breakpoints();

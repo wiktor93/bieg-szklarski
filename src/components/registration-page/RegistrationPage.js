@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '../atoms/Button';
-import styles from './Registration.module.scss';
+import styles from './RegistrationPage.module.scss';
 import {registrationLink} from '../../assets/data';
 
-const Registration = () => {
+const RegistrationPage = () => {
   return (
     <>
       <header className={styles.header}>
@@ -22,4 +22,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default RegistrationPage;

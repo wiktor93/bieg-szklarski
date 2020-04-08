@@ -6,7 +6,7 @@ import CharityBanner from './charity-banner/CharityBanner';
 import VideoReports from './video-reports/VideoReports';
 import GalleryBanner from './gallery-banner/GalleryBanner';
 
-const MainPageContent = () => {
+const MainPage = () => {
   return (
     <>
       <Heading />
@@ -18,4 +18,4 @@ const MainPageContent = () => {
   );
 };
 
-export default MainPageContent;
+export default MainPage;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from './TermsAndConditions.module.scss';
+import styles from './RegulationsPage.module.scss';
 
-const TermsAndConditions = () => {
+const RegulationsPage = () => {
   return (
     <>
       <header className={styles.header}>
@@ -336,4 +336,4 @@ const TermsAndConditions = () => {
   );
 };
 
-export default TermsAndConditions;
+export default RegulationsPage;

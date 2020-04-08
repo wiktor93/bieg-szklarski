@@ -1,20 +1,20 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 
-import styles from './Results.module.scss';
-import {results2018, results2019} from '../../assets/results';
+import {gallery2018, gallery2019} from '../../assets/galleries';
+import styles from './GalleryPage.module.scss';
 
-const Results = () => {
+const GalleryPage = () => {
   return (
     <>
       <header className={styles.header}>
-        <h2>Wyniki</h2>
+        <h2>Galerie z zawodów</h2>
       </header>
 
-      <section className={styles.results}>
+      <section className={styles.content}>
         <h2>2. Bieg Szklarski — 15.09.2019</h2>
         <ul>
-          {results2019.map(({name, link}, i) => (
+          {gallery2019.map(({name, link}, i) => (
             <li key={i}>
               <a href={link} target="_blank">
                 {name}
@@ -22,10 +22,9 @@ const Results = () => {
             </li>
           ))}
         </ul>
-
         <h2>1. Bieg Szklarski — 16.09.2018</h2>
         <ul>
-          {results2018.map(({name, link}, i) => (
+          {gallery2018.map(({name, link}, i) => (
             <li key={i}>
               <a href={link} target="_blank">
                 {name}
@@ -34,9 +33,9 @@ const Results = () => {
           ))}
         </ul>
       </section>
-      <hr />
+      <hr></hr>
     </>
   );
 };
 
-export default Results;
+export default GalleryPage;

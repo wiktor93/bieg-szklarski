@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './RunningRoutes.module.scss';
+import styles from './RouteMapPage.module.scss';
 import Map from '../interactive-map/Map';
 
-const RunningRoutes = () => {
+const RouteMapPage = () => {
   return (
     <>
       <header className={styles.header}>
@@ -30,4 +30,4 @@ const RunningRoutes = () => {
   );
 };
 
-export default RunningRoutes;
+export default RouteMapPage;
