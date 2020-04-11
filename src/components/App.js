@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
+import ScrollToTop from '../utils/hooks/ScrollToTop';
 import Navigation from './navigation/Navigation';
 import MainPage from './main-page/MainPage';
 import ResultsPage from './results-page/ResultsPage';
@@ -13,7 +14,7 @@ import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
 import PageNotFound from './page-not-found/PageNotFound';
 import NewsPage from './news-page/NewsPage';
-import ScrollToTop from '../utils/hooks/ScrollToTop';
+import Article from './news-page/Article';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/regulamin" component={RegulationsPage} />
           <Route exact path="/kontakt" component={ContactPage} />
           <Route exact path="/aktualności" component={NewsPage} />
+          <Route exact path="/aktualności/:slug" component={Article} />
           <Route component={PageNotFound} />
         </Switch>
         <Sponsors />

@@ -30,19 +30,7 @@
       position: relative;
       height: 100%;
 
-      p {
-        width: 100%;
-        margin-bottom: 5%;
-        padding: 0 10px;
-        position: absolute;
-        z-index: 2;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 0%);
-        color: #fff;
-        font-size: 1.6rem;
-        text-align: center;
-      }
+
     }
   }
 }
@@ -52,7 +40,7 @@ div.photo {
   height: 100%;
   overflow: hidden;
   transition: 1s;
-  box-shadow: 0px 0px 10px #000;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
 
   &::before {
     position: absolute;
@@ -76,6 +64,26 @@ div.photo {
   }
 }
 
+.details {
+  position: absolute;
+  width: 100%;
+  padding: 20px 25px;
+  bottom: 0;
+  color: white;
+  z-index: 2;
+
+  p {
+    font-size: 12px;
+  }
+
+  h3 {
+    margin: 3px 0 0 0;
+    font-weight: 400;
+    text-align: left;
+  }
+
+}
+
 .news a:hover div.photo::before {
   background-color: rgba(21, 36, 66, 0.15)
 }
@@ -84,10 +92,6 @@ div.photo {
   .news a {
     width: 50%;
     padding: 0px 10px;
-  }
-
-  .news article p {
-    font-size: 2rem;
   }
 }
 

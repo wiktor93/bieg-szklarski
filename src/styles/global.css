@@ -37,6 +37,10 @@ h3 {
   min-height: 29px;
 }
 
+p {
+  white-space: pre-wrap;
+}
+
 hr {
   margin: 25px auto 25px auto;
   max-width: 1280px;

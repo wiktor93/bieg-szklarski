@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import styles from './Button.module.scss';
 
-const Button = props => {
+const Button = (props) => {
   if (props.to)
     return (
       <Link to={props.to}>
@@ -25,7 +25,10 @@ const Button = props => {
     );
   else
     return (
-      <button className={styles.button} {...props}>
+      <button
+        className={props.disabled ? styles.disabled : styles.button}
+        {...props}
+      >
         {props.children}
       </button>
     );

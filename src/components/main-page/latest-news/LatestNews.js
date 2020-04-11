@@ -1,29 +1,48 @@
 import React from 'react';
-import news from '../../../assets/news';
+import {Link} from 'react-router-dom';
+import {useQuery} from 'graphql-hooks';
+
 import styles from './LatestNews.module.scss';
 import Button from '../../atoms/Button';
+import {articlesQuery} from '../../../utils/queries';
+import LoadingSpinner from '../../atoms/LoadingSpinner';
+import FetchingErrorMessage from '../../atoms/FetchingErrorMessage';
 
-const News = () => {
+const LatestNews = () => {
+  const {loading, error, data} = useQuery(articlesQuery, {
+    variables: {
+      limit: 3,
+      skip: 0,
+    },
+  });
+
   return (
-    <section className={styles.wrap}>
+    <div className={styles.wrap}>
       <h2>Aktualności</h2>
 
       <div className={styles.news}>
-        {news.map(({img, alt, note}, i) => (
-          // eslint-disable-next-line jsx-a11y/anchor-is-valid
-          <a href="#" key={i}>
-            <article>
-              <div className={styles.photo}>
-                <img src={img} alt={alt} />
-              </div>
-              <p>{note}</p>
-            </article>
-          </a>
-        ))}
+        <LoadingSpinner condition={loading} />
+        <FetchingErrorMessage condition={error} />
+
+        {data &&
+          data.allArticles.map(({title, slug, date, createdAt, id, image}) => (
+            <Link to={`aktualności/${slug}`} key={id}>
+              <article>
+                <div className={styles.photo}>
+                  <img src={image.url} alt={image.title} />
+                </div>
+
+                <div className={styles.details}>
+                  <p>{createdAt.slice(0, 10)}</p>
+                  <h3>{title}</h3>
+                </div>
+              </article>
+            </Link>
+          ))}
       </div>
       <Button to="/aktualności">Zobacz więcej</Button>
-    </section>
+    </div>
   );
 };
 
-export default News;
+export default LatestNews;
