@@ -28,3 +28,12 @@ export const singleArtQuery = `query singleArticle($slug: String!) {
     }
   }
  }`;
+
+export const regulationsQuery = `query regulations {
+  allRegulations{
+    name
+    order
+    id
+    listOfRules
+ }
+ }`;
