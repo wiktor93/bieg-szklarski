@@ -1,5 +1,5 @@
 export const currentYear = new Date().getUTCFullYear();
-export const startDate = new Date('2020', '08', '20', '11'); //month is presented by numbers from 0 to 11
+export const startDate = new Date('2021', '08', '19', '11'); //month is presented by numbers from 0 to 11
 
 export const registrationLink = 'https://timekeeper.pl/bieg/?bieg_id=841';
 
@@ -19,7 +19,7 @@ export const routes = [
 ];
 
 export const bannerDetails = [
-  {name: 'date', info: '20 września 2020', icon: 'fas fa-calendar-alt'},
+  {name: 'date', info: '19 września 2021', icon: 'fas fa-calendar-alt'},
   {
     name: 'localization',
     info: 'Tarnobrzeg — Sandomierz',
