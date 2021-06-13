@@ -1,19 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react'
 
-import Button from '../../atoms/Button';
-import styles from './InfoBanner.module.scss';
-import {bannerDetails, startDate, registrationLink} from '../../../assets/data';
-import calculateTimeLeft from '../../../utils/calculateTimeLeft';
+import Button from '../../atoms/Button'
+import styles from './InfoBanner.module.scss'
+import {bannerDetails, startDate} from '../../../assets/data'
+import calculateTimeLeft from '../../../utils/calculateTimeLeft'
 
 const InfoBanner = () => {
-  const [time, setTime] = useState(calculateTimeLeft(startDate));
+  const [time, setTime] = useState(calculateTimeLeft(startDate))
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(calculateTimeLeft(startDate));
-    }, 1000);
-    return () => clearInterval(interval);
-  });
+      setTime(calculateTimeLeft(startDate))
+    }, 1000)
+    return () => clearInterval(interval)
+  })
 
   return (
     <div className={styles.info}>
@@ -24,7 +24,7 @@ const InfoBanner = () => {
           <span>{time.hours}</span>h<span>{time.minutes}</span>min
           <span>{time.seconds}</span>s
         </p>
-        <Button to="/zapisy">Zapisz się</Button>
+        <Button to='/zapisy'>Zapisz się</Button>
       </div>
 
       <ul className={styles.details}>
@@ -38,7 +38,7 @@ const InfoBanner = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default InfoBanner;
+export default InfoBanner
