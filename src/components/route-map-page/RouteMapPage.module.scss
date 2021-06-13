@@ -4,7 +4,8 @@
 
 .header {
   @include subpage-header();
-  background: url("../../assets/images/headings/img-routes.jpg") center no-repeat;
+  background: url('../../assets/images/headings/img-routes.jpg') center
+    no-repeat;
   background-size: cover;
 }
 
@@ -17,7 +18,7 @@
 
     iframe {
       display: block;
-      margin: 0 auto;
+      margin: 24px auto;
       width: 100%;
       max-width: 640px;
       height: 56vw;

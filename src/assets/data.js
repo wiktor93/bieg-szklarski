@@ -1,7 +1,8 @@
 export const currentYear = new Date().getUTCFullYear()
 export const startDate = new Date('2021', '08', '19', '11') //month is presented by numbers from 0 to 11
 
-export const registrationLink = 'https://timekeeper.pl/bieg/?bieg_id=841'
+export const registrationLink =
+  'https://competitions.timekeeper.pl/competitions/75'
 
 export const contactDetails = {
   email: 'biegszklarski@gmail.com',
