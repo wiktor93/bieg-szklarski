@@ -28,7 +28,7 @@ export const bannerDetails = [
   },
   {
     name: 'main_event',
-    info: 'Bieg Główny — 21,0975 km',
+    info: 'Bieg Główny — 21,1 km',
     icon: 'fas fa-running',
   },
   {name: 'sub_event_2', info: 'Szklana Piątka — 5 km', icon: 'fas fa-running'},
